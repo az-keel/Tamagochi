@@ -6,6 +6,7 @@
 	padding: 20px;
 	background-color: #fff;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	animation: fadeOut 1s ease-in-out;
   }
   
   .formulario h2 {
@@ -13,6 +14,7 @@
 	font-size: 28px;
 	margin-bottom: 20px;
 	color: #333;
+	animation: fadeOut 1s ease-in-out;
   }
   
   .formulario input[type="text"],
@@ -24,6 +26,7 @@
 	border: 2px solid #ddd;
 	border-radius: 5px;
 	font-size: 16px;
+	animation: fadeOut 1s ease-in-out;
   }
   
   .formulario input[type="submit"] {
