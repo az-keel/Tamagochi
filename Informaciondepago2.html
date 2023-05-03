@@ -33,7 +33,7 @@
             margin: 5px 0;
         }
 
-        button {
+        a {
             display: block;
             width: 100%;
             padding: 10px;
@@ -50,9 +50,82 @@
         }
     </style>
 </head>
+</head>
+<title>Tamagochi Airlines</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fyi7g4MKZgOiEmNW" crossorigin="anonymous">
+	<style>
+		/* Estilos personalizados para el menú */
+		.navbar-custom {
+			background-color: #708090;
+			color: white;
+			font-weight: bold;
+		}
+		
+		.navbar-custom a {
+      color: black; 
+      
+		}
+		
+		.dropdown-item:hover {
+			background-color: #708090 ;
+		}
+
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom">
+		<div class="container">
+			<div class="banner">
+        <h1>Aerolínea Tamagochi</h1>
+        <p>¡Vuela con nosotros hacia un mundo lleno de diversión!</p>
+    </div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="iniciarsesion.html">Iniciar Sesión</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="True">
+							Destinos 
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="Japon.html">Japón</a>
+							<a class="dropdown-item" href="losangeles.html">Los Angeles</a>
+							<a class="dropdown-item" href="merida.html">Mérida</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="tamagochi-acercade.html">Acerca de</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="tamagochi.html#contact">Contacto</a>
+					</li>
+          <li class="nav-item">
+						<a class="nav-link" href="informaciondepago2.html"><i class="fas fa-shopping-cart"></i>
+            </a>
+					</li>
+          <form>
+          <input class="" type="search" placeholder="Buscar" aria-label="Buscar">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <body>
     <div class="container">
-        <h1>Aerolínea Tamagochi - Información de Pago</h1>
+        <h1>Información de Pago</h1>
         <div class="flight-info">
             <p><strong>Vuelo:</strong> TG123</p>
             <p><strong>Origen:</strong> Ciudad A - 12:00 PM</p>
@@ -85,14 +158,15 @@
             <input type="text" id="cardNumber" name="cardNumber" minlength="15" maxlength="16" required>
 
             <label for="expiry">Fecha de vencimiento (MM/AA):</label>
-            <input type="text" id="expiry" name="expiry" pattern="^(0[1-9|1[0-2])\/([0-9]{2})$" required>
+            <input type="text" id="expiry" name="expiry"required>
 
             <label for="cvv">CVV:</label>
             <input type="text" id="cvv" name="cvv" minlength="3" maxlength="4" required>
 
-            <button type="submit">Realizar Pago</button>
+            <a href="Confirmación de pago.html">Realizar Pago</a> 
         </form>
     </div>
+    
 </body>
 </html>
 
