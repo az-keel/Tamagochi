@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Tamagochi Airlines - Viaja rápido y seguro</title>
+  <link rel="stylesheet" href="estilos.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-FBzM+DjIzcxwWsbPQgZtvjLZ1NCt/sH5W5yIOYXAK36lb3qQcQi2wW8OMv4YP4MtzfvnRWejLrW6lY+cXrINyg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-DyZ88LScxfEe>NNLk8lDXe+xBdb6Ab9T6JFdf6W8XDw3XI28GCwkDoAqzkolp7V3qfk/1D7+UU5/3HNP3W3/3w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <title>Tamagochi Airlines</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fyi7g4MKZgOiEmNW" crossorigin="anonymous">
@@ -30,7 +33,10 @@
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom">
 		<div class="container">
-			<a class= >Tamagochi Airlines</a>
+			<div class="banner">
+        <h1>Aerolínea Tamagochi</h1>
+        <p>¡Vuela con nosotros hacia un mundo lleno de diversión!</p>
+    </div>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -55,6 +61,14 @@
 					<li class="nav-item">
 						<a class="nav-link" href="#contact">Contacto</a>
 					</li>
+          <li class="nav-item">
+						<a class="nav-link" href="informaciondepago2.html"><i class="fas fa-shopping-cart"></i>
+            </a>
+					</li>
+          <form>
+          <input class="" type="search" placeholder="Buscar" aria-label="Buscar">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
 				</ul>
 			</div>
 		</div>
@@ -104,7 +118,7 @@
           <div class="card-body">
             <h5 class="card-title">Japón</h5>
             <p class="card-text">Venga a visitar una de las mejores culturas del mundo</p>
-            <a href="Japon.html" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Próximamente">Reservar</a>
+            <a href="Japon.html" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Vuela Ya!">Reservar</a>
           </div>
         </div>
       </div>
@@ -114,7 +128,7 @@
           <div class="card-body">
             <h5 class="card-title">Los Ángeles</h5>
             <p class="card-text">Ten unas increibles vacaciones en una de las mejores ciudades del mundo</p>
-            <a href="losangeles.html" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Próximamente">Reservar</a>
+            <a href="losangeles.html" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Vuela Ya!">Reservar</a>
           </div>
         </div>
       </div>
@@ -124,30 +138,30 @@
           <div class="card-body">
             <h5 class="card-title">Mérida</h5>
             <p class="card-text">Ven a visitar uno de las playas más hermosas de México</p>
-            <a href="merida.html" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Próximamente">Reservar</a>
+            <a href="merida.html" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Vuela Ya!">Reservar</a>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div id="contact" classclass="container mt-5">
-    <h2 class="col-11 col-md-6" class="animate__animated animate__fadeInDown">Contáctanos</h2>
-    <div class="row">
-    <div class="col-md-6">
-    <form>
-    <div class="form-group">
-    <label class="col-27 col-md-7" for="nombre">Nombre:</label>
-    <input type="text" class="form-control" id="nombre" required>
-    </div>
-    <div class="form-group">
-    <label class="col-11 col-md-6" for="correo">Correo electrónico:</label>
-    <input type="email" class="form-control" id="correo" required>
-    </div>
-    <div class="form-group">
-    <label class="col-11 col-md-6" for="mensaje">Mensaje:</label>
-    <textarea class="form-control" id="mensaje" rows="5" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary" >Enviar</button>
+    <h2 class="animate__animated animate__fadeInDown">Contáctanos</h2>
+<div class="row">
+<div class="col-md-6">
+<form>
+<div class="form-group">
+<label for="nombre">Nombre:</label>
+<input type="text" class="form-control" id="nombre" required>
+</div>
+<div class="form-group">
+<label for="correo">Correo electrónico:</label>
+<input type="email" class="form-control" id="correo" required>
+</div>
+<div class="form-group">
+<label for="mensaje">Mensaje:</label>
+<textarea class="form-control" id="mensaje" rows="5" required></textarea>
+</div>
+<button type="submit" class="btn btn-primary">Enviar</button>
     </form>
     </div>
     <div class="col-md-6">
@@ -156,12 +170,12 @@
     <h5 class="card-title">Información de contacto</h5>
     <p class="card-text"><i class="fas fa-map-marker-alt"></i> Dirección: 123 Calle Principal, Ciudad</p>
     <p class="card-text"><i class="fas fa-phone-alt"></i> Teléfono: +1 (123) 456-7890</p>
-    <p class="card-text"><i class="fas fa-envelope"></i> Correo electrónico: info@tamagochi.com</p>
+    <p class="card-text"><i class="fas fa-envelope"></i> Correo electrónico: info@tamagochi.net</p>
     <p class="card-text"><i class="fas fa-envelope"></i> Da click en los siguientes botones para nuestras redes sociales</p>
     <div class="d-flex justify-content-center">
-    <a href="https://Facebook.com" class="btn btn-primary mr-3" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fab fa-instagram"></i>Facebook</a>
-    <a href="https://Twitter.com" class="btn btn-primary mr-3" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="https://Twitter.com/Emilio"></i>Twitter</a>
-    <a href="https://Instagram.com" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="https://Instagram.com/Emilio"></i>Instagram</a>
+    <a href="https://Facebook.com" class="btn btn-primary mr-3" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fab fa-facebook"></i>Facebook</a>
+    <a href="https://Twitter.com" class="btn btn-primary mr-3" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fab fa-twitter"></i>Twitter</a>
+    <a href="https://Instagram.com" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fab fa-instagram"></i>Instagram</a>
     </div>
     </div>
     </div>
